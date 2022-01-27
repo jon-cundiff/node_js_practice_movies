@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>partials/links}}
+    <title>Movie Details</title>
+</head>
+<body>
+    {{>partials/header}}
+    <div class="container">
+        <p><b>Title: </b>{{movie.title}}</p>
+        <p><b>Description: </b>{{movie.description}}</p>
+        <p><b>Genre: </b>{{movie.genre}}</p>
+        <img src="{{movie.poster}}">
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<header>
+    <a href="/movies">
+        <img src="/static/images/film.svg">
+        Movies
+    </a>
+    <a href="/movies/create">Add Movie</a>
+    <form method="POST" action="/movies/genre">
+        <select name="genre">
+            <option value="">Filter by genre...</option>
+            {{# genres}}
+                <option>{{.}}</option>
+            {{/ genres}}
+        </select>
+        <button>Filter</button>
+    </form>
+</header>

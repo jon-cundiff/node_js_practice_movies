@@ -1,0 +1,17 @@
+<div class="container movie">
+    <div class="movie-img">
+        <img src="{{poster}}">
+    </div>
+    <div class="movie-info">
+        <h2>{{title}}</h2>
+        <div class="movie-actions">
+            <a href="/movies/{{movieId}}">
+                <button class="button details">Details</button>
+            </a>
+            <form method="POST" action="/movies/delete">
+                <input type="hidden" name="movieId" value="{{movieId}}">
+                <button class="button delete">Delete</button>
+            </form>
+        </div>
+    </div>
+</div>

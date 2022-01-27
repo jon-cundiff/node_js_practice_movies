@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>partials/links}}
+    <title>Movies</title>
+</head>
+<body>
+    {{>partials/header}}
+    <div class="container">
+    <h1>{{genre}} Movie List</h1>
+        {{#movies}}
+            {{>partials/movieItem}}
+        {{/movies}}
+        {{^movies}}
+            <h2>No movies found</h2>
+        {{/movies}}
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(210, 180, 140, 0.4);
+}
+
+.container {
+    margin: 2em 1em;
+    padding: 2em;
+    box-shadow: 2px 2px 10px rgba(10, 10, 10, 0.4);
+    background-color: rgba(245, 245, 245, 0.8);
+}
+
+.movie {
+    padding: 1em;
+    height: 150px;
+    display: flex;
+    column-gap: 2em;
+}
+
+.movie-img,
+.movie-img img {
+    height: 100%;
+}
+
+.movie-info {
+    width: 100%;
+    text-align: center;
+}
+
+#newMovieForm {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.7em;
+}
+
+.form-control {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8em;
+}
+
+.form-control input {
+    width: 100%;
+    padding: 0.5em;
+}
+
+#newMovieForm .button {
+    background-color: chartreuse;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.button {
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.movie-actions {
+    display: flex;
+    column-gap: 1em;
+}
+
+.movie-actions > * {
+    width: 48%;
+}
+
+.delete,
+.details {
+    width: 100%;
+}
+.delete {
+    background-color: crimson;
+    color: white;
+}
+
+.details {
+    background-color: chartreuse;
+    margin-bottom: 1em;
+}
+
+header {
+    height: 2em;
+    display: flex;
+    column-gap: 2em;
+    align-items: baseline;
+    padding: 1em 2em;
+    box-shadow: 1px 1px 10px rgba(10, 10, 10, 0.4);
+    background-color: rgba(245, 245, 245, 0.6);
+}
+
+header a {
+    height: 100%;
+    text-decoration: none;
+    font-size: 1.4em;
+    color: black;
+}
+header img {
+    height: 100%;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>partials/links}}
+    <title>Add Movie</title>
+</head>
+<body>
+    {{>partials/header}}
+    <div class="container">
+        <form method="POST" action="/movies/create" id="newMovieForm" encType="multipart/form-data">
+            <div class="form-control">
+                <label for="title">Movie Title</label>
+                <input type="text" name="title" placeholder="Enter Movie Title" required>
+            </div>
+            <div class="form-control">
+                <label for="description">Movie Description</label>
+                <input type="text" name="description" placeholder="Enter Movie Description" required>
+            </div>
+            <div class="form-control">
+                <label for="genre">Movie Genre</label>
+                <input type="text" name="genre" placeholder="Enter Movie Genre" required>
+            </div>
+            <div class="form-control">
+                <label for="poster">Upload Poster Img</label>
+                <input type="file" name="poster" accept="image/png, image/jpeg" required>
+            </div>
+            <button class="button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
